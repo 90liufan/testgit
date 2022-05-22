@@ -13,7 +13,9 @@ public class LoginController {
     @GetMapping(value="mytest")
     public String getRequest(@RequestParam String name){
         log.info("这是第一个测试"+name);
+        log.info("这是第二个测试"+name);
         return name;
+
     }
 
     @GetMapping(value="lambda")
