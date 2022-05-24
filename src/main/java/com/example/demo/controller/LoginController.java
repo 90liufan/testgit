@@ -41,6 +41,7 @@ public class LoginController {
         new Person("李四","狂")
         );
         listone.stream().filter(person -> person.getLastName().startsWith("风")).forEach(person -> System.out.println(person.getName()));
+        System.out.println("---------------");
         return "success";
     }
 
