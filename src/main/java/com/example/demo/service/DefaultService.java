@@ -9,4 +9,5 @@ public interface DefaultService {
     default void testDefault(){
         System.out.println("this is test");
     }
+    public void read();
 }
