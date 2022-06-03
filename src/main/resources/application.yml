@@ -4,12 +4,12 @@ server:
     context-path: /
 spring:
   application:
-    name: cloud-payment-service # 服务名称
+    name: cloud-payment-service
   datasource:
-    driver-class-name: oracle.jdbc.OracleDriver # Oracle数据库驱动包
+    driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@localhost:1521/ORCL
     username: C##testdb
-    password: C##testdb
+    password: testdb
 # Mybatis配置
 mybatis:
   # 配置XML映射文件中指定的实体类别名路径
