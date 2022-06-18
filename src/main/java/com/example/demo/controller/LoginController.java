@@ -61,5 +61,8 @@ public class LoginController {
         studentMapper.insertStudent(stu);
         return "success";
     }
+    public String testaaa(){
+        return "sucdess";
+    }
 
 }
