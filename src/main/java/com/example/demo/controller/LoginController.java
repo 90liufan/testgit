@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
-
+import com.example.demo.mapper.StudentMapper;
+import com.example.demo.moudle.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value="/get")
 @Slf4j
 public class LoginController {
+    @Autowired
+    private StudentMapper studentMapper;
 
     @GetMapping(value="mytest")
     public String getRequest(@RequestParam String name){
@@ -52,17 +55,17 @@ public class LoginController {
         greetService2.sayMessage("Google");
         return name;
     }
-
+    @GetMapping(value="/insert")
+    public String insertStu(){
+        Student stu=new Student();
+        studentMapper.insertStudent(stu);
+        return "success";
+    }
     public String testaaa(){
         return "sucdess";
     }
     public String testccc(){
         return "sucdess";
     }
-
-    public String testbbb(){
-        return "sucdess";
-    }
-
 
 }
