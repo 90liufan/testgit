@@ -63,11 +63,6 @@ public class LoginController {
     public String testbbb(){
         return "sucdess";
     }
-    public String testaaa(){
-        return "sucdess";
-    }
-    public String testccc(){
-        return "sucdess";
-    }
+
 
 }
