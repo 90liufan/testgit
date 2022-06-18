@@ -64,5 +64,8 @@ public class LoginController {
     public String testaaa(){
         return "sucdess";
     }
+    public String testccc(){
+        return "sucdess";
+    }
 
 }
